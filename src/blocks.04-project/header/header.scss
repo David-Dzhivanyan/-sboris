@@ -1,0 +1,60 @@
+.header {
+  background-color: $black;
+
+  font-family: $font-family-secondary;
+
+  border-bottom: 1px solid $white;
+
+  padding: 18px 0;
+
+  @include media-breakpoint-down(md) {
+    font-size: 20px;
+  }
+}
+
+.header__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+
+  width: 100%;
+
+  @include media-breakpoint-up(xl) {
+    flex-direction: row;
+  }
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  color: $white;
+  text-decoration: none;
+
+  .blue { color: $blue; }
+
+  .red { color: $primary; }
+}
+
+.header__title {
+  margin-top: 8px;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+
+  margin-top: 8px;
+
+  @include media-breakpoint-up(xl) {
+    gap: 60px;
+  }
+}
+
+.header__link {}

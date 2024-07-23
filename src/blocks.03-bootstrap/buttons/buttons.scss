@@ -1,0 +1,28 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-transform: uppercase;
+  font-family: $font-family-secondary;
+  color: $white;
+  border-radius: 100px;
+  transition: $transition-base;
+
+
+  border: 3px solid $primary;
+
+  &:hover {
+    background: none;
+    color: $white;
+  }
+}
+
+.btn-outline {
+  border: 2px solid $white;
+
+  &:hover {
+    background: $white;
+    color: $black;
+  }
+}

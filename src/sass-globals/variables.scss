@@ -1,0 +1,59 @@
+$icons-font-family: 'fi';
+$font-family-sans-serif: 'Peachy Keen JF', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-secondary: 'Ruslan Display', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+
+$enable-dark-mode:            false;
+
+// scss-docs-start gray-color-variables
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+// scss-docs-end gray-color-variables
+
+// scss-docs-start color-variables
+$blue:    #002d72;
+$indigo:  #00327b;
+$purple:  #6f42c1;
+$pink:    #d63384;
+$red:     #ff0606;
+$orange:  #fd7e14;
+$yellow:  #ffc107;
+$green:   #198754;
+$teal:    #20c997;
+$cyan:    #0dcaf0;
+// scss-docs-end color-variables
+
+// scss-docs-start theme-color-variables
+$primary:       $red;
+$secondary:     $gray-600;
+$success:       $green;
+$info:          $cyan;
+$warning:       $yellow;
+$danger:        $red;
+$light:         $gray-100;
+$dark:          $gray-900;
+// scss-docs-end theme-color-variables
+
+// scss-docs-start zindex-stack
+$zindex-dropdown:                   100;
+$zindex-sticky:                     120;
+$zindex-fixed:                      130;
+$zindex-offcanvas-backdrop:         140;
+$zindex-offcanvas:                  145;
+$zindex-modal-backdrop:             150;
+$zindex-modal:                      155;
+$zindex-popover:                    170;
+$zindex-tooltip:                    180;
+$zindex-toast:                      190;
+// scss-docs-end zindex-stack
+
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/variables-dark";

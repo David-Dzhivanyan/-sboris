@@ -1,0 +1,75 @@
+.how-buy {
+  background-color: $white;
+
+  color: $blue;
+
+  padding: 54px 0 0;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.how-buy__title {
+  font-family: $font-family-secondary;
+
+  font-size: 40px;
+
+  text-align: center;
+
+  margin: 0 auto 54px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 60px;
+    margin: 0 auto 84px;
+  }
+}
+
+.how-buy__steps {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 60px;
+  row-gap: 40px;
+
+  @include media-breakpoint-up(md) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include media-breakpoint-up(xxl) {
+    column-gap: 140px;
+    margin-left: 140px;
+    margin-right: 140px;
+  }
+}
+
+.how-buy__step-title {
+  font-family: $font-family-secondary;
+
+  font-size: 34px;
+  margin-bottom: 8px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 54px;
+  }
+}
+
+.how-buy__description {
+  font-size: 18px;
+  line-height: 1.6;
+
+  text-transform: uppercase;
+
+  .a {
+    color: $blue;
+  }
+
+  @include media-breakpoint-up(md) {
+    font-size: 20px;
+  }
+
+  .link-here {
+    font-size: 22px;
+    font-family: $font-family-secondary;
+  }
+}

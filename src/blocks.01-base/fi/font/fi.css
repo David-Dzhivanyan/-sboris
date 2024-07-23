@@ -1,0 +1,41 @@
+@font-face {
+    font-family: "fi";
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+    src: url("./fi.woff2?acbeae84ac55bf7581612db5b7e22d98") format("woff2");
+}
+
+.fi:before {
+    font-family: fi !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.fi_icon_close:before {
+    content: "\f101";
+}
+.fi_icon_copy:before {
+    content: "\f102";
+}
+.fi_icon_cube:before {
+    content: "\f103";
+}
+.fi_icon_dex:before {
+    content: "\f104";
+}
+.fi_icon_eagle:before {
+    content: "\f105";
+}
+.fi_icon_tg:before {
+    content: "\f106";
+}
+.fi_icon_x:before {
+    content: "\f107";
+}

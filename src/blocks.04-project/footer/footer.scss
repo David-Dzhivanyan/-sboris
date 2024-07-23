@@ -1,0 +1,12 @@
+.footer {
+  background: $blue;
+  padding: 16px 0;
+  margin-bottom: 10px;
+}
+
+.footer__inner {
+  font-family: $font-family-secondary;
+  color: $white;
+  text-transform: uppercase;
+  text-align: center;
+}

@@ -1,0 +1,109 @@
+.copy {
+  background: linear-gradient($primary, #e20404);
+
+  margin-top: 86px;
+}
+
+.copy__inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+  padding: 40px 0 90px;
+}
+
+.copy__logo {
+  z-index: 1;
+}
+
+.copy__text-wrapper {
+  z-index: 1;
+  border: 1px solid $white;
+  border-radius: 20px;
+
+  transition: $transition-base;
+  max-width: 100%;
+  padding: 8px;
+
+  &:hover {
+    transform: scale(1.05);
+    .fi {
+      color: $primary;
+    }
+  }
+}
+
+.copy__text {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  border-radius: 18px;
+  border: 1px solid $white;
+  background: $blue;
+  overflow: auto;
+
+  font-family: $font-family-secondary;
+  color: $white;
+  font-size: 20px;
+  white-space: nowrap;
+  cursor: pointer;
+
+  padding: 10px 20px 4px;
+  max-width: 100%;
+
+  .fi {
+    font-size: 1.5em;
+  }
+
+  @include media-breakpoint-up(lg) {
+    gap: 40px;
+
+    border-radius: 20px;
+
+    font-size: 34px;
+
+    padding: 18px 40px 10px;
+  }
+}
+
+.copy__stick {
+  display: none;
+  position: absolute;
+  z-index: 0;
+
+  top: 0;
+  width: 30px;
+  height: 100%;
+
+  &_left {
+    left: 0;
+  }
+
+  &_right {
+    right: 0;
+  }
+
+  &_white {
+    background: $white;
+  }
+
+  &_blue {
+    background: $blue;
+  }
+
+  &_blue.copy__stick_left {
+    left: 7.5%;
+  }
+
+  &_blue.copy__stick_right {
+    right: 7.5%;
+  }
+
+  @include media-breakpoint-up(md) {
+    display: block;
+  }
+}

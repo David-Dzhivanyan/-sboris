@@ -1,0 +1,159 @@
+.logo {
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 60px;
+  color: $white;
+
+  @include media-breakpoint-up(lg) {
+    flex-direction: row;
+    gap: 40px;
+
+    padding-top: 100px;
+  }
+}
+
+.logo__info {
+  order: 1;
+  flex: 0 1 50%;
+
+  @include media-breakpoint-up(lg) {
+    order: 0;
+  }
+}
+
+.logo__title {
+  font-size: 60px;
+  line-height: 0.9;
+
+  font-family: $font-family-secondary;
+  margin-top: 66px;
+}
+
+.logo__description {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+
+  margin-top: 20px;
+}
+
+.logo__nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 44px 0 30px 0;
+
+  @include media-breakpoint-up(md) {
+    flex-wrap: nowrap;
+  }
+}
+
+.logo__link-wrapper {
+  border: 2px solid $gray-500;
+  border-radius: 100%;
+
+  transition: $transition-base;
+  transition-property: transform  ;
+
+  padding: 3px;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &_tg {
+    .logo__link {
+      background-color: #00a9e0;
+      font-size: 1.4em;
+      padding-right: 4px;
+    }
+  }
+
+  &_x {
+    .logo__link {
+      background-color: $black;
+    }
+  }
+
+  &_eagle {
+    .logo__link {
+      background-color: $black;
+      font-size: 1.4em;
+      padding-left: 3px;
+    }
+  }
+
+  &_dex {
+    .logo__link {
+      background-color: $white;
+      font-size: 1.9em;
+      color: #00a9e0
+    }
+  }
+
+  &_cube {
+    .logo__link {
+      background-color: #263546;
+      .img {
+        max-width: 60%;
+      }
+    }
+  }
+}
+
+.logo__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &.a {
+    text-decoration: none;
+  }
+
+  border-radius: 100%;
+  border: 2px solid $white;
+
+  width: 50px;
+  height: 50px;
+}
+
+.logo__btn-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .btn {
+    font-size: 28px;
+
+    padding: 10px 50px 4px;
+  }
+
+  .btn-outline {
+    padding: 10px 20px 4px;
+  }
+
+  @include media-breakpoint-up(md) {
+    flex-direction: row;
+  }
+}
+
+.logo__image {
+  flex: 0 1 50%;
+  animation: pulse 2s linear infinite;
+  .img {
+    width: 100%;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0.9);
+  }
+}
